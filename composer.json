@@ -1,0 +1,17 @@
+{
+    "name": "reach/faker-kh-php",
+    "description": "PHP library to generate random Khmer words.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Reach\\FakerKhPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Phat Panhareach",
+            "email": "111555521+Re4ch-Jay@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
