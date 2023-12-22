@@ -1,6 +1,8 @@
 # FakerKH​ for PHP
 
-FakerKH is a PHP library for generating fake Khmer data. Use this library to create random addresses, names, quotes, and more in Khmer language. Use this library for Khmer word dummy data seeder in you Laravel Application.
+FakerKH is a PHP library for generating fake Khmer data.
+Use this library to create random addresses, names, quotes, and more in Khmer language. 
+Use this library for Khmer word dummy data seeder in you Laravel Application.
 
 ## Installation
 
