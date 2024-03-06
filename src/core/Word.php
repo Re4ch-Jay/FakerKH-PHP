@@ -2,7 +2,8 @@
 
 namespace Core;
 
-class Word {
+class Word
+{
     public static $firstnameList = [
         'តារា',
         'ពឹសី',
@@ -281,7 +282,7 @@ class Word {
             'country' => 'កម្ពុជា',
         ],
     ];
-    
+
     public static $countryList = [
         'កម្ពុជា',
         'វៀតណាម',
@@ -322,4 +323,43 @@ class Word {
         'គោ'
     ];
 
+    public static $units = [
+        'គីឡូក្រាម',
+        'ម៉ែត្រក្រាម',
+        'ម៉ែត្រ',
+        'គីឡូម៉ែត្រ',
+        'ម៉ែត្រ',
+        'ខាំ',
+        'យោគ៍',
+    ];
+
+    public static $currencies = [
+        'រៀល',
+        'ដុល្លា',
+        'បាត',
+        'បាតុង',
+        'បាតុងរៀល',
+        'បាតុងដុល្លា',
+        'បាតុងបាត',
+        'ដុង',
+    ];
+
+    public static $vegetables = [
+        'ស្ពឺ',
+        'ការ៉ុត',
+        'ម្រេច',
+        'ត្រសក់',
+        'ម្ទេស',
+        'ឈ្លោក',
+        'ត្រកួន',
+    ];
+
+    public static $fruits = [
+        'ប៉ោម',
+        'ក្រូច',
+        'ស្វាយ',
+        'ចេក',
+        'ម្នាស់',
+        'ប៉េស',
+    ];
 }

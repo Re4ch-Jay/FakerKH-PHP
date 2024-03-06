@@ -25,4 +25,8 @@ echo "Random city: " . $faker->city() . PHP_EOL;
 echo "Random province: " . $faker->province() . PHP_EOL;
 echo "Random country: " . $faker->country() . PHP_EOL;
 echo "Random animal: " . $faker->animal() . PHP_EOL;
+echo "Random unit: " . $faker->unit() . PHP_EOL;
+echo "Random currency: " . $faker->currency() . PHP_EOL;
+echo "Random vegetable: " . $faker->vegetable() . PHP_EOL;
+echo "Random fruit: " . $faker->fruit() . PHP_EOL;
 // More to come :)

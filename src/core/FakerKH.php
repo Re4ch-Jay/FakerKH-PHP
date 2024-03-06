@@ -9,7 +9,8 @@ namespace Core;
  *
  * @package Core
  */
-class FakerKH {
+class FakerKH
+{
 
     /**
      * Get a random element from the given array.
@@ -17,7 +18,8 @@ class FakerKH {
      * @param array $wordList An array of words.
      * @return mixed Random element from the array.
      */
-    private function getRandomElement(array $wordList) {
+    private function getRandomElement(array $wordList)
+    {
         $randomIndex = rand(0, sizeof($wordList) - 1);
         return $wordList[$randomIndex];
     }
@@ -27,7 +29,8 @@ class FakerKH {
      *
      * @return string Random first name.
      */
-    public function firstname() {
+    public function firstname(): string
+    {
         return $this->getRandomElement(Word::$firstnameList);
     }
 
@@ -36,7 +39,8 @@ class FakerKH {
      *
      * @return string Random last name.
      */
-    public function lastname() {
+    public function lastname(): string
+    {
         return $this->getRandomElement(Word::$lastnameList);
     }
 
@@ -45,7 +49,8 @@ class FakerKH {
      *
      * @return string Random full name.
      */
-    public function fullname() {
+    public function fullname(): string
+    {
         return $this->lastname() . ' ' . $this->firstname();
     }
 
@@ -54,8 +59,9 @@ class FakerKH {
      *
      * @return string Random full name with title.
      */
-    public function fullnameWithTitle() {
-        return  $this->title() . ' ' . $this->lastname() . ' ' . $this->firstname();
+    public function fullnameWithTitle(): string
+    {
+        return $this->title() . ' ' . $this->lastname() . ' ' . $this->firstname();
     }
 
     /**
@@ -63,7 +69,8 @@ class FakerKH {
      *
      * @return string Random address.
      */
-    public function address() {
+    public function address(): string
+    {
         $randomIndex = array_rand(Word::$addressList);
         $randomAddress = Word::$addressList[$randomIndex];
 
@@ -81,7 +88,8 @@ class FakerKH {
      *
      * @return string Random telephone number.
      */
-    public function tel() {
+    public function tel(): string
+    {
         return $this->getRandomElement(Word::$telList);
     }
 
@@ -90,18 +98,20 @@ class FakerKH {
      *
      * @return string Random sentence.
      */
-    public function sentence() {
+    public function sentence(): string
+    {
         return $this->getRandomElement(Word::$sentenceList);
     }
 
-    
+
     /**
      * Generate a random paragraph.
      *
      * @param int $numberSentences Number of sentences in the paragraph (default: 3).
      * @return string Random paragraph.
      */
-    public function paragraph($sentenceCount = 3) {
+    public function paragraph($sentenceCount = 3): string
+    {
         $paragraph = '';
 
         for ($i = 0; $i < $sentenceCount; $i++) {
@@ -113,12 +123,14 @@ class FakerKH {
 
         return rtrim($paragraph);
     }
+
     /**
      * Generate a random title.
      *
      * @return string Random title.
      */
-    public function title() {
+    public function title(): string
+    {
         return $this->getRandomElement(Word::$titleList);
     }
 
@@ -127,7 +139,8 @@ class FakerKH {
      *
      * @return string Random day.
      */
-    public function day() {
+    public function day(): string
+    {
         return $this->getRandomElement(Word::$dayList);
     }
 
@@ -136,7 +149,8 @@ class FakerKH {
      *
      * @return string Random month.
      */
-    public function month() {
+    public function month(): string
+    {
         return $this->getRandomElement(Word::$monthList);
     }
 
@@ -145,7 +159,8 @@ class FakerKH {
      *
      * @return string Random year.
      */
-    public function year() {
+    public function year(): string
+    {
         return $this->getRandomElement(Word::$yearList);
     }
 
@@ -154,7 +169,8 @@ class FakerKH {
      *
      * @return string Random date.
      */
-    public function date() {
+    public function date(): string
+    {
         return $this->day() . ' ' . $this->month() . ' ' . $this->year();
     }
 
@@ -163,9 +179,10 @@ class FakerKH {
      *
      * @return string Random city.
      */
-    public function city() {
+    public function city(): string
+    {
         $city = $this->getRandomElement(array_column(Word::$addressList, 'city'));
-        return 'ក្រុង'. $city;
+        return 'ក្រុង' . $city;
     }
 
     /**
@@ -173,7 +190,8 @@ class FakerKH {
      *
      * @return string Random province.
      */
-    public function province(): string {
+    public function province(): string
+    {
         $province = $this->getRandomElement(array_column(Word::$addressList, 'province'));
         return $province;
     }
@@ -183,7 +201,8 @@ class FakerKH {
      *
      * @return string Random country.
      */
-    public function country() {
+    public function country(): string
+    {
         return $this->getRandomElement(Word::$countryList);
     }
 
@@ -192,7 +211,8 @@ class FakerKH {
      *
      * @return string Random animal.
      */
-    public function animal() {
+    public function animal(): string
+    {
         return $this->getRandomElement(Word::$animalList);
     }
 
@@ -201,9 +221,46 @@ class FakerKH {
      *
      * @return string Random postal code.
      */
-    public function postalCode() {
+    public function postalCode(): string
+    {
         $postalCode = $this->getRandomElement(array_column(Word::$addressList, 'postalCode'));
         return $postalCode;
     }
 
+    /**
+     * Generate a random unit.
+     *
+     * @return string Random unit.
+     */
+    public function unit(): string
+    {
+        return $this->getRandomElement(Word::$units);
+    }
+
+    /**
+     * Generate a random currency.
+     * @return string
+     */
+    public function currency(): string
+    {
+        return $this->getRandomElement(Word::$currencies);
+    }
+
+    /**
+     * Generate a random vegetable.
+     * @return string
+     */
+    public function vegetable(): string
+    {
+        return $this->getRandomElement(Word::$vegetables);
+    }
+
+    /**
+     * Generate a random fruit.
+     * @return string
+     */
+    public function fruit(): string
+    {
+        return $this->getRandomElement(Word::$fruits);
+    }
 }
