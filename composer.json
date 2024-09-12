@@ -1,5 +1,5 @@
 {
-    "name": "panhareach/faker-kh-php",
+    "name": "panhareach/faker-kh",
     "description": "PHP library to generate random Khmer words.",
     "type": "library",
     "autoload": {
