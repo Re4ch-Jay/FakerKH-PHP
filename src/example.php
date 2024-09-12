@@ -1,7 +1,6 @@
 <?php
 
-require_once 'core/Word.php';
-require_once 'core/FakerKH.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 // Example usage:
 use Core\FakerKH;
