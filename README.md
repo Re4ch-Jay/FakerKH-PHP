@@ -7,7 +7,7 @@ Use this library for Khmer word dummy data seeder in you Laravel Application.
 ## Installation
 
 ```bash
-# not yet release
+composer require panhareach/faker-kh
 ```
 
 ## Usage
