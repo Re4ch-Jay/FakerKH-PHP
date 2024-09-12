@@ -2,6 +2,7 @@
     "name": "panhareach/faker-kh",
     "description": "PHP library to generate random Khmer words.",
     "type": "library",
+    "version": "1.0.0",
     "autoload": {
         "psr-4": {
             "Core\\": "src/core/"
